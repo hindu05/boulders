@@ -1,0 +1,158 @@
+<!--
+  Definere indhold til title-tagget
+  Include navigation
+-->
+<?php
+  $title = "Aarhus Boulders - stedet hvor fællesskab og sport smelter sammen";
+  $description = "Velkommen til Aarhus Boulders. Om du er nybegynder eller øvet klatrer så tilbyder vi faciliteterne, som passer til dine behov. Kom for at drikke en kop kaffe, hygge med vennerne eller prøve de mange forskellige klatrevægge. Aarhus Boulders er stedet, hvor fællesskab og sport smelter sammen.";
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO meta tags -->
+    <title><?php echo $title; ?></title>
+    <meta name="description" content="<?php echo $description ?>">
+    <meta name="contact" content="rune@aarhusboulders.dk" />
+    <!-- Css timeline-->
+    <link rel="stylesheet" href="vendors/timeline/css/style.css">
+    <!-- Css mobil -->
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+    <!-- Css ipad -->
+    <link rel="stylesheet" href="css/stylesheet-ipad.min.css">
+    <!-- Css desktop -->
+    <link rel="stylesheet" href="css/stylesheet-desktop.min.css">
+    <!-- Timeline javascript-link -->
+    <script src="vendors/timeline/js/modernizr.js" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <nav id="desktop">
+        <a href="index.php">
+          <img src="img/boulders-logo.png" alt="Aarhus Boulders Logo">
+        </a>
+        <ul>
+          <li><a href="index.php">forside</a>&nbsp;&nbsp;|</li>
+          <li><a href="begynd-at-klatre.php">begynd at klatre</a>&nbsp;&nbsp;|</li>
+          <li><a href="pris-og-medlemskaber.php">pris og medlemskab</a>&nbsp;&nbsp;|</li>
+          <li><a href="kaffepause.php">kaffepause</a>&nbsp;&nbsp;|</li>
+          <li><a href="kontakt.php">kontakt</a></li>
+          <li class="gavekort"><a href="http://app.lifepeaks.dk/gift-card/create?company_id=53">gavekort</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="burg">
+      <a href="index.php">
+        <img src="img/boulders-logo.png" alt="Aarhus Boulders Logo">
+      </a>
+      <div class="burg-bars">
+        <span class="bar" id="top"></span>
+        <span class="bar" id="middle"></span>
+        <span class="bar" id="bottom"></span>
+      </div>
+    </div>
+    <div class="mobile-tab">
+      <nav id="mobile">
+        <ul>
+          <li><a href="index.php">forside</a></li>
+          <li><a href="begynd-at-klatre.php">begynd at klatre</a></li>
+          <li><a href="pris-og-medlemskaber.php">pris og medlemskab</a></li>
+          <li><a href="kaffepause.php">kaffepause</a></li>
+          <li><a href="kontakt.php">kontakt</a></li>
+          <li><a href="http://app.lifepeaks.dk/gift-card/create?company_id=53">gavekort</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- video -->
+    <section class="top top-front">
+      <article class="intro-video">
+        <video id="kalk_gif" autoplay loop muted playsinline>
+          <source src="video/kalk.mp4" type="video/mp4">
+        </video>
+        <section class="video_overlay">
+          <!-- Start/pause knap til video -->
+          <section class="controls">
+            <button id="pause_video"><img src="img/gfx/pause.png" alt="Pause video"></button>
+            <button id="start_video"><img src="img/gfx/play.png" alt="Play video"></button>
+            <button id="stop_video"><img src="img/gfx/stop.png" alt=""></button>
+            <button id="mute_video"><img src="img/gfx/lyd-til.png" alt="Mute video"></button>
+            <button id="unmute_video"><img src="img/gfx/lyd-fra.png" alt="Unmute video"></button>
+          </section>
+        <video id="full_video">
+          <source src="video/boulders.mp4" type="video/mp4">
+        </video>
+        </section>
+      </article>
+      <article class="introtekst center">
+        <h1>velkommen</h1>
+        <p class="forsideintro_desktop forsideintro_mobile">Velkommen indenfor. Afspil videoen for at opleve en typisk dag hos Aarhus Boulders!</p>
+        <button id="play_intro_video">Afspil</button>
+      </article>
+    </section>
+    <!-- sociale medier bokse -->
+    <article class="social_media">
+      <section class="arrangementer">
+        <a href="https://www.facebook.com/aarhusboulders">
+          <img src="img/sociale-ikoner/facebook.png" alt="facebook boulders" onmouseover="this.src='img/sociale-ikoner/facebook-like.png'" onmouseout="this.src='img/sociale-ikoner/facebook.png'"></a>
+        <h2>nyheder og events</h2>
+        <p>Vil du også gerne vide, hvornår vi holder det næste Late Night Bouldering-arrangement eller åbning af nye vægge? Så hop over på <a href="https://www.facebook.com/aarhusboulders">Facebook</a>, hvor du får de nyeste opdateringer om arrangementer og nyheder hos Aarhus Boulders.</p>
+        <ul>
+          <li><a href="https://www.facebook.com/aarhusboulders">Følg os på Facebook</a></li>
+        </ul>
+      </section>
+      <section class="arrangementer">
+        <a href="https://www.instagram.com/aarhusboulders/"><img src="img/sociale-ikoner/instagram.png" alt="instagram boulders" onmouseover="this.src='img/sociale-ikoner/instagram-like.png'" onmouseout="this.src='img/sociale-ikoner/instagram.png'"></a>
+        <h2>Socialt</h2>
+        <p>Har du nogle fede billeder eller videoer fra dit seneste besøg hos Aarhus Boulders? Så del dem med dine venner og tag os på <a href="https://www.instagram.com/explore/tags/aarhusboulders/">#aarhusboulders</a>. Du kan også smutte forbi <a href="https://www.instagram.com/aarhusboulders/">@aarhusboulders</a> og se vores mange fede billeder og videoer.</p>
+        <ul>
+          <li><a href="https://www.instagram.com/aarhusboulders/">Følg os på Instagram</a></li>
+        </ul>
+      </section>
+      <section class="arrangementer">
+        <a href="https://vimeo.com/user47037971">
+        <img src="img/sociale-ikoner/vimeo.png" alt="vimeo boulders" onmouseover="this.src='img/sociale-ikoner/vimeo-like.png'" onmouseout="this.src='img/sociale-ikoner/vimeo.png'"></a>
+        <h2>Inspiration</h2>
+        <p>Mangler du inspiration til at gennemføre de mange klatrevægge? Så besøg os på <a href="https://vimeo.com/user47037971">Vimeo</a>, hvor vi løbende lægger inspirerende videoer op, som kan hjælpe dig med at løse problemerne ved dit næste besøg.</p>
+        <ul>
+          <li><a href="https://vimeo.com/user47037971">Følg os på Vimeo</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+<footer>
+  <section class="footer-item">
+    <p>
+      ÅBNINGSTIDER &nbsp; · &nbsp; 10-22 HVER DAG
+    </p>
+  </section>
+  <section class="footer-item">
+    <p>
+      GRAHAM BELLS VEJ 18A · 8200 AARHUS N · Tlf: <a href="tel:40 95 52 54">40 95 52 54</a>
+    </p>
+  </section>
+  <section class="footer-item">
+    <p>
+      FØLG MED SOCIALT
+    </p>
+    <section class="social_icons">
+      <a href="https://da-dk.facebook.com/aarhusboulders/"><img src="img/gfx/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/aarhusboulders/"><img src="img/gfx/instagram.png" alt="Instagram"></a>
+      <a href="https://vimeo.com/user47037971"><img src="img/gfx/vimeo.png" alt="Vimeo"></a>
+    </section>
+  </section>
+</footer>
+<!-- Jquery link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- javascript -->
+<script src="js/script.min.js" charset="utf-8"></script>
+<!-- javascript-link timeline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="vendors/timeline/js/main.js" charset="utf-8"></script>
+</body>
+</html>
+

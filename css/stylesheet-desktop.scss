@@ -1,0 +1,83 @@
+/*Stylesheet til desktop*/
+
+/*Variabler med farver*/
+$sort: #000;
+$fontcolor: #666;
+$graa: #a8a49f;
+$lysgraa: #d9d8d6;
+$groen: #8c997d;
+$lysgroen: #d3dac8;
+
+@media screen and (min-width: 1024px) {
+  .introtekst{
+    padding: 2%;
+  }
+
+  .intro-video{
+    height: auto;
+  }
+
+  .cut {
+    img {
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+              clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    }
+  }
+
+  .kontakt-top {
+    img {
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+              clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+    }
+  }
+
+  .top {
+    height: 100vh;
+    max-height: 700px;
+  }
+
+  .top-front{
+    height: auto;
+    .center {
+      border-radius: 10px;
+      border: 1px $lysgroen solid;
+      width: 40%;
+      left: 30%;
+      bottom: 143px;
+      button {
+        padding: 8px 20px;
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .social_media .arrangementer {
+    padding-bottom: 10px 0;
+    p {
+      height: 98px;
+      margin-bottom: 26px;
+      padding: 0 50px;
+    }
+    ul {
+      li {
+        margin: 20px 0;
+      }
+    }
+  }
+  
+  .bouldering{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .social_media .arrangementer {
+    ul {
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+}

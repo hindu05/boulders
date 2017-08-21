@@ -1,0 +1,638 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Raleway:300,400,700');
+
+/*Variabler med farver*/
+$sort: #000;
+$fontcolor: #666;
+$graa: #a8a49f;
+$lysgraa: #d9d8d6;
+$groen: #8c997d;
+$lysgroen: #d3dac8;
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  color: #666;
+  font-weight: 300;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1, h2, h3{
+  font-family: 'Quicksand';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+h2{
+  font-size: 1.6em;
+  line-height: 1;
+  padding: 20px;
+}
+
+a{
+  color: $sort;
+  text-decoration: none;
+}
+
+button{
+  font-family: 'Raleway';
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 4px #999;
+          box-shadow: 0px 2px 4px #999;
+  background-color: $groen;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+  &:hover {
+    background-color: #fff;
+    color: $groen;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/*Navigation*/
+.burg-bars {
+display: block;
+width: 70px;
+cursor: pointer;
+}
+
+.bar{
+  z-index: 9999;
+  max-width: 1280px;
+  border-bottom: -2px solid $lysgroen;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#burg {
+width: 100%;
+background: rgba(255, 255, 255, 0.8);
+padding: 5px;
+z-index: 9999;
+position: fixed;
+top: 0;
+border-bottom: 2px solid $lysgroen;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+img{
+  height: 26px;
+  }
+}
+
+span.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px;
+  width: 30px;
+  height: 1px;
+  background: #000;
+  z-index: 999;
+}
+
+.mobile-tab {
+position: fixed;
+background-color: white;
+z-index: 999;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 100%;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+#desktop {
+display: none;
+}
+
+.mobile-tab a {
+font-size: 16px;
+color: #666;
+text-decoration: none;
+font-weight: lighter;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.mobile-tab li {
+list-style-type: none;
+margin: 20px 5%;
+&:last-child a{
+  color: $lysgroen;
+}
+}
+
+.mobile-tab ul {
+padding: 40px 0 0 0;
+border-bottom: 2px solid $lysgroen;
+}
+
+.top{
+    height: 100vh;
+    background-image: url('../img/cover-billeder/boulders_kalk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 60px;
+    img {
+      display: none;
+    }
+}
+
+.intro-video {
+  display: none;
+}
+
+.priser-top{
+  background-image: url('../img/cover-billeder/priser_medlemskaber_mobile.jpeg');
+}
+
+.kontakt-top {
+  background-image: url('../img/cover-billeder/kontakt.jpg')
+}
+
+.begyndatklatre-top {
+  background-image: url('../img/cover-billeder/desejedrenge.jpg')
+}
+
+
+.introtekst {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8);
+  text-align: center;
+  padding: 5%;
+  button {
+    display: block;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .forsideintro_mobile {
+    padding: 0 0 20px 0;
+  }
+}
+
+.social_media {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  .arrangementer {
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    h2{
+      font-size: 1.6em;
+    }
+    img {
+      height: 100px;
+    }
+    p {
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: underline;
+    }
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      li{
+        list-style-type: none;
+        background-color: $groen;
+        padding: 3px 10px;
+        margin: 10px;
+        width: 250px;
+        border-radius: 20px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 2px 4px #999;
+                box-shadow: 0px 2px 4px #999;
+        background-color: $groen;
+        -webkit-transition: .5s;
+        transition: .5s;
+        color: white;
+        &:hover{
+          background-color: #fff;
+          a{
+            color: $groen;
+          }
+        }
+        &:active{
+          position: relative;
+          top: 1px;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.bouldering{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.priser{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  .pris-og-medlemskab{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: $lysgraa;
+    border-radius: 10px;
+    padding: 40px 0;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    p{
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 32px;
+      margin-top: 20px;
+    }
+    ul{
+
+      li{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        list-style-type: none;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+section.skoleje {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+  h3{
+    margin-bottom: 20px;
+  }
+}
+
+article.betingelser, article.lokaleudlejning {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+span.bold{
+  font-weight: bold;
+}
+
+section.aabningstider {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  h3{
+    text-align: center;
+  }
+}
+
+.cd-timeline-content{
+  p{
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
+#kontaktformular {
+  width: 80%;
+  margin: 0 auto;
+  input, textarea{
+    width: 100%;
+    background-color: $lysgroen;
+    margin: 5px 0;
+    padding: 5px;
+    border: none;
+    font-weight: 300;
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 1em;
+  }
+  textarea {
+    height: 75px;
+    resize: none;
+  }
+  input {
+    height: 35px;
+  }
+  input:focus, textarea:focus {
+    border: 1px solid $groen;
+  }
+  button {
+    border-radius: 10px;
+    width: 110px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    float: right;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Quicksand';
+  }
+}
+
+/*recolor af placeholders*/
+::-webkit-input-placeholder { color: white; }
+::-moz-placeholder { color: white; }
+:-ms-input-placeholder { color: white; }
+:-moz-placeholder { color: white; }
+/*placeholder transparant*/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+#google-maps{
+  clear: both;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  iframe {
+    width: 100%;
+    border: none;
+    margin: 60px 0 0 0;
+  }
+  ul {
+    li{
+      list-style-type: none;
+      text-transform: uppercase;
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* Slideshow */
+.slideshow-container-desktop{
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+	border: 1px solid #CDCDCD;
+  overflow: hidden;
+}
+
+.slideshow-container p {
+  display:block;
+}
+
+.slideshow-container img {
+	width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mySlides, .mySlides1 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+	 background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides, .mySlides1 {
+  position: relative;
+  .imgboks{
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    padding: 10px;
+  }
+  p{
+    display: block;
+  }
+  h2{
+    padding: 0;
+  }
+  .imgboks{
+    top: 72%;
+    left: 0;
+    width: 80%;
+  }
+}
+
+/*footer*/
+footer{
+  padding: 20px;
+  background-color: $sort;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction:column;
+      flex-direction:column;
+  clear: both;
+
+  .footer-item{
+    color: $lysgroen;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    ul{
+      list-style-type: none;
+      a{
+        color: $lysgroen;
+      }
+    }
+  }
+  .social_icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+    img{
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    }
+  }
+}
+
+/*MOBIL video_overlay*/
+.top-front {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  .center {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/*video*/
+.intro-video{
+  display: block;
+  position: relative;
+  video{
+  -o-object-fit: cover;
+     object-fit: cover;
+    width: 100%;
+  }
+  #kalk_gif{
+    display: none;
+  }
+}
+
+/*overlay med intro-video*/
+.video_overlay{
+  background-color: black;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+  video {
+    margin-top: 60%;
+  }
+  .controls{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 40px;
+    z-index: 99;
+    img {
+      display: inline-block;
+    }
+    #unmute_video {
+      display: none;
+    }
+    #start_video {
+      display: none;
+    }
+    img {
+      width: 20px;
+    }
+    button{
+      border-radius: 25px;
+      padding: 6px 16px;
+      border: none;
+      background-color: rgba(151, 164, 137, .8);
+      font-size: 12px;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+            white-space: nowrap;
+    }
+  }
+}
